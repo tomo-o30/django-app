@@ -1,6 +1,9 @@
 {% if request.user.is_authenticated %}
 <p>{{ request.user }}</p>
-<a href = "{% url 'login' %}">ログアウト</a>
+<form action='{% url "logout" %}' method='post' name='logout'>
+    {% csrf_token %}
+    <a href="javascript:logout.submit()">ログアウト</a>
+</form>
 {% else %}
 <a href = "{% url 'login' %}">ログイン</a>
 {% endif %}
