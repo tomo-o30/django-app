@@ -1,4 +1,4 @@
-<h1>Todoリスト</h1>
+<h1>タスク：{{task.title}}</h1>
 
 <table>
 <tr>
@@ -7,7 +7,6 @@
 {% for task in tasks %}
 <tr>
     <td>{{task.title}}</td>
-    <td><a href = "{% url 'task' task.id %}">確認</td>
 </tr>
 {% endfor %}
 
