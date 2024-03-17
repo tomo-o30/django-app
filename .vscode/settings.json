@@ -1,0 +1,4 @@
+{
+    "python.analysis.extraPaths": ["c:/python310/lib/site-packages"],
+    "cSpell.userWords":["todoapp"]
+}
